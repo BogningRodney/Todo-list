@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="app.js" type="module"></script>
+    </head>
+
+
+    <body>
+
+        <section>
+            <h1>To do list</h1>
+            <div class="container">
+                <div class="full_input">
+                    <input type="text" placeholder="Ajouter un truc" id="inputField">
+                    <button id="addToDo">+</button>
+                </div>
+                <div id="toDoContainer"></div>
+            </div>
+        </section>
+
+    
+
+    </body>
+
+
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #13181f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        section{
+            background: white;
+            padding: 10px;
+            width: 450px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        h1{
+            text-align: center;
+            margin: 10px;
+        }
+
+        .full_input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input{
+            width: 90%;
+            padding: 10px 5px;
+            height: 39px;
+            border: 1px solid #b3b2b2;
+            outline: 0;
+            border-radius: 6px 0px 6px 0;
+        }
+
+        button{
+            width: 10%;
+            font-size: 20px;
+            height: 39px;
+            border:0;
+            background: #4285f4;
+            color: white;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .paragraphe_style{
+            margin: 10px 0;
+            padding: 10px 0;
+            padding-left: 5px;
+            border-radius: 6px;
+            color: white;
+            background: #4285f4;
+            word-break: break-all;
+            cursor: pointer;
+            animation: anim 0.5s linear;
+        }
+
+        .paragraphe_style:last-child{
+            margin-bottom: 0;
+        }
+
+        .machin{
+            background: rgb(189, 115, 115);
+            color: white;
+            text-decoration: line-through;
+        }
+
+        @keyframes anim{
+            from{
+                transform: translateY(50px);
+            }
+        }
+    </style>
+
+</html>
